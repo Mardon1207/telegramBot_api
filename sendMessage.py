@@ -21,7 +21,7 @@ while True:
     update_id = last_update_id(update)
     if last_id != update_id:
         text = last_update['message']['text']
-        chat_id = 1336583023
+        chat_id = last_update["message"]["chat"]['id']
 
         sendMessage(chat_id=chat_id, text=text)
         print(text)
